@@ -1,0 +1,40 @@
+.header {
+  /* border: 1px solid; */
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 2%;  */
+  /* position: fixed; */
+}
+.logo {
+  /* border: 1px solid; */
+  width: 30%;
+  position: relative;
+  padding: 2%;
+}
+
+.navigation {
+  /* border: 1px solid; */
+  position: relative;
+  width: 50%;
+}
+.navigation ul {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-evenly;
+}
+.navigation ul li {
+  list-style: none;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.6px;
+  font-size: 20px;
+  color: rgb(54, 54, 54);
+}
+
+.navigation ul .Home-link{
+    text-decoration: none;
+}
