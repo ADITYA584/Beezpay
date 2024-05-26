@@ -15,15 +15,17 @@ const Otp = (props) => {
     confirmationResult
       .confirm(code)
       .then((result) => {
+        console.log(result);
+        alert(`verification successfull!!`);
       })
       .catch((error) => {
         console.log(error);
       });
     SendData({
       id: "iyNQC82WxWXwTwvYqqXZ5jqnGVx2",
-      name: "priyansh",
-      email: "priyanshg615@gmail.com",
-      number: "+918423364688",
+      name: "Aditya",
+      email: "adityasharma5847@gmail.com",
+      number: "+917037019356",
     });
     props.onClose();
     props.onVerify();
@@ -36,7 +38,7 @@ const Otp = (props) => {
         body: JSON.stringify(Data),
       };
       fetch(
-        "https://us-central1-beezhive-79e2f.cloudfunctions.net/app/api/waitlist",
+        "POST https://firebasedynamiclinks.googleapis.com/v1/shortLinks?key=AIzaSyDkrsb9kfc4RyA606W_Zywv83936rQvs7g",
         requestOptions
       )
         .then(async (response) => {

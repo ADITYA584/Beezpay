@@ -38,14 +38,12 @@ const FormDetails = () => {
   const ModalDisplay = (e) => {
     e.preventDefault();
     window.recaptchaVerifier = new RecaptchaVerifier(
-
-      
       "sign-in-button",
       {
         size: "invisible",
-        callback: (response) => {
-        }
-      },Authentication
+        callback: (response) => {},
+      },
+      Authentication
     );
     signInWithPhoneNumber(
       Authentication,
@@ -57,7 +55,7 @@ const FormDetails = () => {
         window.confirmationResult = result;
       })
       .catch((error) => {
-        
+        console.log(error);
       });
     setDisplay(true);
   };
